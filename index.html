@@ -16,8 +16,14 @@
    
     
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,800;1,900&family=Sarabun:wght@300;400;500;700;800&display=swap');
-
-   
+    
+    @font-face {
+    src: url(font/COCOGOOSELETTERPRESS.eot) format('eot'),
+         url(font/COCOGOOSELETTERPRESS.ttf) format('ttf'),
+        url(font/COCOGOOSELETTERPRESS.woff) format('woff'),
+        url(font/COCOGOOSELETTERPRESS.woff2) format('woff2');
+    }
+        
     .container-fluid {
         padding: 0px;
     }
@@ -43,10 +49,16 @@
         
     }
     
-     .bg-page {
-    background: #00ABB8;  
-        
+   .bg-page {
+    background-color: #00ABB8; 
+    background-image: url(img/background.webp);
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;       
     }
+    
+   
     
     .bg-video {
       position: absolute;
@@ -68,7 +80,7 @@
         
     }
     .bg-v {
-        background: linear-gradient(180deg, rgba(0,148,168,0) 0%, rgba(0,148,168,1) 100%);
+        background: linear-gradient(180deg, rgba(0,171,184,0) 0%, rgba(0,171,184,1) 100%);
         height: 800px;
         position: absolute;
         overflow: hidden;
@@ -134,12 +146,15 @@ display: none !important;
         font-size: 110px;
         font-weight: 800;
         line-height: normal;
+       
     }
     
     
     
 /*ESTILOS CONTENIDO PRINCIPAL*/
-    
+    .container img {
+        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+    }
 </style>
 
 
@@ -154,24 +169,20 @@ display: none !important;
         
     </div>
    <div class="container cnt-banner">
-       <div class="row">
-         <div class="col-md-12 texto-banner">
-          <div class="col-md-1 col-md-offset-3 borde-bottom"></div>
-           <div class="col-md-4 texto-inicio">
-               <p>Prepárate</p>
-           </div><div class="col-md-1 borde-top"></div>
-           </div>
-          
-           <div class="col-md-12">
-               <img src="img/logo_carrera_athletic_compensar.png" alt="Carrera Athletic Compensar">
-           </div>
-            <div class="col-md-12 contador">
-                      
-                <div><span id="days"></span></div>  <div><span id="hours"></span></div><p>:</p> <div><span id="minutes"></span></div><p>:</p> <div><span id="seconds"></span></div>
-
-            </div>
-               
-       </div>
+   <div class="row">
+   <div class="col-md-12 texto-banner">
+   <div class="col-md-1 col-md-offset-3 borde-bottom"></div>
+   <div class="col-md-4 texto-inicio">
+   <p>Prepárate</p>
+   </div><div class="col-md-1 borde-top"></div>
+   </div>
+   <div class="col-md-12">
+   <img src="img/logo_carrera_athletic_compensar.webp" alt="Carrera Athletic Compensar">
+   </div>
+   <div class="col-md-12 contador">
+   <div><span id="days"></span></div>  <div><span id="hours"></span></div><p>:</p> <div><span id="minutes"></span></div><p>:</p> <div><span id="seconds"></span></div>
+    </div>
+   </div>
    </div>
     
     
@@ -179,10 +190,147 @@ display: none !important;
 </div>
 </section>
 
+<style>
+/*INTRO CARRERA*/
+    
+    .intro-carrera {
+        padding: 120px 0;
+    }
+    .container h1 {
+        color: white;
+        text-align: left;
+        font-family: 'COCOGOOSE LETTERPRESS';
+        text-transform: uppercase;
+        border-bottom: 2px solid white;
+    }
+    .intro-carrera p, .cifras {
+        color: white;
+        text-align: left;
+        font-size: 17px;
+        line-height: 27px;
+        padding: 25px 0;
+    }
+    
+    .btn-principal {
+        display: block;
+        background-color: #F60;
+        color: white;
+        font-size: 20px;
+        padding: 12px;
+        margin-top: 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        transition-duration: 0.9s;
+    }
+    
+    .btn-principal:hover {
+        background-color: #000000;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .bg-cifras {
+        background-color: #3E155E;
+        background-image: ;
+        margin-top: 50px;
+    }
+    
+    .cifras {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        background-color: #3E155E; 
+        margin: auto;
+    }
+    
+    .cifras h2 {
+        padding-bottom: 30px;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    .datos {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+    
+    
+    .cifra1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 10px solid;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        margin: auto;
+        
+        
+        
+    }
+    
+    .cifra1 p {
+        font-size: 35px;
+        font-weight: 700;
+    }
+    
+    .b-naranja {
+        border-color: #F60;
+    }
+    
+    .b-amarillo {
+        border-color: #F5A200;
+    }
+    .b-azul {
+       border-color: #58D0D9;
+    }
+    
+    .subindice {
+        padding-top: 10px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+    
+    .container h2, .container h3, {
+        
+    }
+</style>
 
 <!-- INTRO CARRERA ATHLETIC -->
 <section title="Introducción y cifras sobre la Carrera Athletic Compensa">
+<div class="container">
+    <div class="col-md-12 intro-carrera">
+     <div class="col-md-5">
+     <h1>Carrera Athletic</h1>
+     <p>Carrera Athletic Compensar, es una carrera de 5K y 10K donde cada uno de los participantes podra disfrutar un gran recorrido que se tomará el parque Simón Bolívar y sus alrededores, Athletic Compensar contará con puntos de hidratación, puntos medicos y vías completamente cerradas durante su recorrido.</p>
+     <a href="#" class="btn-principal">Inscríbete aquí</a>
+     </div>
+     <div class="col-md-6 col-md-offset-1"><img src="img/foto_introduccion.webp" alt="Personas compitiendo en una carrera"></div> 
+       
+    </div>
+</div>
 
+<div class="container-fluid bg-cifras">
+<div class="container"> <div class="col-md-12 cifras">
+    <div class="col-md-6">
+    <h2>Cifras</h2>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+    </div>
+    <div class="col-md-6 col-md-offset-1 datos">
+    
+    <div class="col-md-4 ctn-cifra">
+    <div class="cifra1 b-azul"><p>5K</p></div><p class="subindice">Distancia</p></div>
+    <div class="col-md-4 ctn-cifra">
+    <div class="cifra1 b-amarillo"><p>10K</p></div><p class="subindice">Distancia</p></div>
+    <div class="col-md-4 ctn-cifra">
+    <div class="cifra1 b-naranja"><p>2.000</p></div><p class="subindice">Asistentes esperados</p></div>
+    </div>    
+    </div>
+</div>
+       
+</div>
 
 </section>
 
