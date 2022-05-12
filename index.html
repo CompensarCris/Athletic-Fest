@@ -36,8 +36,11 @@
     text-align: center;
     }
     
-    section .container{
-    padding-top: 70px;
+    
+    
+    .bg-banner {
+        height: 800px;
+        
     }
     
      .bg-page {
@@ -45,12 +48,30 @@
         
     }
     
+    .bg-video {
+      position: absolute;
+      width: 100%;
+      height: 790px;
+      padding: 0px;
+      overflow: hidden;
+  
+    }
+   
+    
     .cnt-banner {
-        padding: 50px 0px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
     .texto-banner {
         padding: 50px 0;
         
+    }
+    .bg-v {
+        background: linear-gradient(180deg, rgba(0,148,168,0) 0%, rgba(0,148,168,1) 100%);
+        height: 800px;
+        position: absolute;
+        overflow: hidden;
     }
     .texto-inicio {
         padding-left: 0px;
@@ -81,23 +102,56 @@
     
     
     /*VIDEO YOUTUBE*/
-    .ytp-chrome-top {
-display: none;
+    .ytp-title-text, .yt-uix-sessionlink{
+display: none !important;
 } 
-    .ytp-button{
-        display: none;
+   
+   /*CONTADOR*/
+    
+    .contador {
+        display: flex;
+        padding: 50px 0 0 0;
+        justify-content: center;
+        
     }
+    .contador span{
+        font-family: 'Sarabun', sans-serif;
+        font-size: 110px;
+        font-weight: 800;
+        color: #007382;
+        background-color: #58D0D9;
+        padding: 0 20px;
+        
+    }
+    
+    #days {
+        
+        margin-right: 80px;
+    }
+    .contador p {
+        margin: 0 20px;
+        color: white;
+        font-size: 110px;
+        font-weight: 800;
+        line-height: normal;
+    }
+    
     
     
 /*ESTILOS CONTENIDO PRINCIPAL*/
     
 </style>
+
+
 <main class="bg-page">
 
 <section title="Banner Carrera Athletic Compensar">
 <div class="container-fluid bg-banner">
-  <div class="col-md-12">
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/BIGsHKXPLNQ?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div class="col-md-12 bg-video">
+   <iframe width="1920px" height="1080px" src="https://www.youtube.com/embed/BIGsHKXPLNQ?autoplay=1&mute=1&loop=1&controls=01&playlist=BIGsHKXPLNQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="col-md-12 bg-v">
+        
     </div>
    <div class="container cnt-banner">
        <div class="row">
@@ -111,9 +165,12 @@ display: none;
            <div class="col-md-12">
                <img src="img/logo_carrera_athletic_compensar.png" alt="Carrera Athletic Compensar">
            </div>
-           <div class="col-md-12">
+            <div class="col-md-12 contador">
+                      
+                <div><span id="days"></span></div>  <div><span id="hours"></span></div><p>:</p> <div><span id="minutes"></span></div><p>:</p> <div><span id="seconds"></span></div>
+
+            </div>
                
-           </div>
        </div>
    </div>
     
@@ -130,7 +187,11 @@ display: none;
 </section>
 
 </main>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+    
+    <script src="js/conteo.js"></script>
+    
 </body>
 </html>
