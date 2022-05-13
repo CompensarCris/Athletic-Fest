@@ -46,7 +46,13 @@
     text-align: center;
     }
     
-    
+    .container h3 {
+        padding-bottom: 30px;
+        font-family: 'Sarabun', sans-serif;
+        font-size: 30px;
+        font-weight: 700;
+        color: white;
+    }
     
     .bg-banner {
         height: 800px;
@@ -133,6 +139,7 @@ display: none !important;
         display: flex;
         padding: 50px 0 0 0;
         justify-content: center;
+        grid-gap: 0 50px;
         
     }
     .contador span{
@@ -145,17 +152,21 @@ display: none !important;
         
     }
     
-    #days {
-        
-        margin-right: 80px;
-    }
+    
     .contador p {
-        margin: 0 20px;
+        text-align: center;
         color: white;
         font-size: 110px;
         font-weight: 800;
         line-height: normal;
        
+    }
+    
+    .t-contador {
+        
+        font-size: 30px !important;
+    text-align: initial;
+    text-transform: uppercase;
     }
     
     
@@ -189,7 +200,7 @@ display: none !important;
    <img src="img/logo_carrera_athletic_compensar.webp" alt="Carrera Athletic Compensar">
    </div>
    <div class="col-md-12 contador">
-   <div><span id="days"></span></div>  <div><span id="hours"></span></div><p>:</p> <div><span id="minutes"></span></div><p>:</p> <div><span id="seconds"></span></div>
+   <div><span id="days"></span><p class="t-contador">Días</p></div>  <div><span id="hours"></span><p class="t-contador">Horas</p></div> <div><span id="minutes"></span><p class="t-contador">Minutos</p></div> <div><span id="seconds"></span><p class="t-contador">Segundos</p></div>
     </div>
    </div>
    </div>
@@ -203,7 +214,7 @@ display: none !important;
 /*INTRO CARRERA*/
     
     .intro-carrera {
-        padding: 120px 0;
+        padding: 70px 0;
     }
     .container h2 {
         color: white;
@@ -255,12 +266,8 @@ display: none !important;
         margin: auto;
     }
     
-    .cifras h3 {
-        padding-bottom: 30px;
-        font-family: 'Sarabun', sans-serif;
-        font-size: 35px;
-        font-weight: 700;
-    }
+   
+    
     
     .cifra {
         display: flex;
@@ -305,9 +312,7 @@ display: none !important;
         line-height: 20px;
     }
     
-    .container h2, .container h3, {
-        
-    }
+    
 </style>
 
 <!-- INTRO CARRERA ATHLETIC -->
@@ -362,7 +367,6 @@ display: none !important;
     
     .nav-categorias h3 {
         text-align: center;
-        color: white;
         background: #f60;
         padding: 30px;
         border-radius: 10px 10px 0 0;
@@ -439,7 +443,7 @@ display: none !important;
     
     
     .info-categorias h3 {
-        
+        padding-bottom: 10px;
         padding-top: 30px;
         color: white;
         font-weight: 600;
@@ -463,9 +467,9 @@ display: none !important;
             <nav>
             <h3>Categorías</h3>
             <ul>
-                <li><a href="#">Abierta 5k - 10K<br> (18 - 39 años)<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-                <li><a href="#">Master 5k - 10K<br>(40 - 49 años)<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
-                <li><a href="#">Plus 5k - 10K<br>(50 años en adelante)<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">Abierta femenina y masculina <br>(18 - 39 años) 5k - 10K <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">Master femenina y masculina <br>(40 - 49 años) 5k - 10K<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">Plus femenina y masculina <br> (50 años en adelante) 5k - 10K <i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
             </ul>
             </nav>
             <div class="botones">
@@ -492,7 +496,7 @@ display: none !important;
     
     .bg-detalles2 {
         background-color: #016774;
-        margin-top: 55px;
+        margin: 55px 0;
     }
     
     .info-carrera {
@@ -500,7 +504,7 @@ display: none !important;
     }
     .datos {
         display: flex;
-        margin-top: 50px;
+        padding: 30px 0;
         align-items: flex-end;
     }
     
@@ -539,7 +543,12 @@ display: none !important;
            </div>
            
        </div>
-        
+       
+        <div class="container">
+            <div class="col-md-12">
+                <h3>Recorrido</h3>
+            </div>
+        </div> 
     </div>
 </section>
 
