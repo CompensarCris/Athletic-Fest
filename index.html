@@ -35,6 +35,10 @@
     p {
     margin: 0px;
     }
+    
+    .container p {
+        color: white;
+    }
     section { 
     box-sizing: border-box;
     font-family: 'Sarabun', sans-serif;
@@ -74,6 +78,11 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
+        
+    }
+    
+    .cnt-banner img {
+        box-shadow: none !important;
     }
     .texto-banner {
         padding: 50px 0;
@@ -196,12 +205,13 @@ display: none !important;
     .intro-carrera {
         padding: 120px 0;
     }
-    .container h1 {
+    .container h2 {
         color: white;
-        text-align: left;
+       
         font-family: 'COCOGOOSE LETTERPRESS';
         text-transform: uppercase;
         border-bottom: 2px solid white;
+        font-size: 40px;
     }
     .intro-carrera p, .cifras {
         color: white;
@@ -221,6 +231,8 @@ display: none !important;
         border-radius: 25px;
         text-decoration: none;
         transition-duration: 0.9s;
+        width: 350px;
+    margin: auto;
     }
     
     .btn-principal:hover {
@@ -238,19 +250,19 @@ display: none !important;
     .cifras {
         display: flex;
         align-items: center;
-        padding: 20px 0;
+        padding: 40px 0;
         background-color: #3E155E; 
         margin: auto;
     }
     
-    .cifras h2 {
+    .cifras h3 {
         padding-bottom: 30px;
         font-family: 'Sarabun', sans-serif;
         font-size: 35px;
         font-weight: 700;
     }
     
-    .datos {
+    .cifra {
         display: flex;
         justify-content: space-between;
         text-align: center;
@@ -303,9 +315,10 @@ display: none !important;
 <div class="container">
     <div class="col-md-12 intro-carrera">
      <div class="col-md-5">
-     <h1>Carrera Athletic</h1>
+     <h1 style="display: none">Carrera Athletic Compensar</h1>
+     <h2>Carrera Athletic</h2>
      <p>Carrera Athletic Compensar, es una carrera de 5K y 10K donde cada uno de los participantes podra disfrutar un gran recorrido que se tomará el parque Simón Bolívar y sus alrededores, Athletic Compensar contará con puntos de hidratación, puntos medicos y vías completamente cerradas durante su recorrido.</p>
-     <a href="#" class="btn-principal">Inscríbete aquí</a>
+     <a href="#" class="btn-principal" role="button">Inscríbete aquí</a>
      </div>
      <div class="col-md-6 col-md-offset-1"><img src="img/foto_introduccion.webp" alt="Personas compitiendo en una carrera"></div> 
        
@@ -315,10 +328,10 @@ display: none !important;
 <div class="container-fluid bg-cifras">
 <div class="container"> <div class="col-md-12 cifras">
     <div class="col-md-6">
-    <h2>Cifras</h2>
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+    <h3>Cifras</h3>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo.</p>
     </div>
-    <div class="col-md-6 col-md-offset-1 datos">
+    <div class="col-md-6 col-md-offset-1 cifra">
     
     <div class="col-md-4 ctn-cifra">
     <div class="cifra1 b-azul"><p>5K</p></div><p class="subindice">Distancia</p></div>
@@ -332,6 +345,202 @@ display: none !important;
        
 </div>
 
+</section>
+
+<style>
+/*Modalidad*/
+    .modalidad {
+        padding: 100px 0;
+    }
+    
+    
+    .nav-categorias {
+        text-align: left;
+        padding: 0 30px;
+       
+    }
+    
+    .nav-categorias h3 {
+        text-align: center;
+        color: white;
+        background: #f60;
+        padding: 30px;
+        border-radius: 10px 10px 0 0;
+        margin: 0;
+    }
+    
+    .nav-categorias ul{
+        list-style: none;
+        text-decoration: none;
+        padding-inline-start: 0px;
+        
+    } 
+    
+        
+    .nav-categorias ul li a {
+         color: black;
+        text-decoration: none;
+    }
+    
+    
+    .nav-categorias i {
+        position: relative;
+    }
+    
+    
+    .nav-categorias li a:hover{
+        
+        color: white;
+        text-decoration: none;
+        background-color: #3E155E;
+       
+        
+    } 
+    .nav-categorias li a {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; 
+        background-color: white;
+        padding: 24px;
+        border-top: 1px solid #EBEBEB;
+        transition-duration: 0.7s;
+    }
+    
+    .botones {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        grid-gap: 30px 0;
+    }
+    .botones a {
+        display: block;
+        color: white;
+        padding: 10px;
+        border: 2px solid #58D0D9;
+        border-radius: 25px;
+        text-align: center;
+        text-decoration: none;
+        transition-duration: 0.2s;
+    }
+    
+    .botones i {
+        padding-right: 20px;
+    }
+    
+    .botones a:hover {
+        background-color: #92F5FC;
+        color: #007382;
+        border: 2px solid rgba(0, 0, 0, 0);
+        font-weight: 600;
+    }
+    .modalidad h2 {
+        margin-bottom: 70px;
+    }
+    
+    
+    .info-categorias h3 {
+        
+        padding-top: 30px;
+        color: white;
+        font-weight: 600;
+    }
+    
+    .info-categorias p {
+        text-align: left;
+        color: white;
+        padding-bottom: 35px;
+    } 
+</style>
+<section title="Información sobre las carreras en las diferentes modalidades">
+    
+    
+    <div class="container">
+        <div class="col-md-12 modalidad">
+          <div class="col-md-8 col-md-offset-2 ">
+          <h2>Modalidad presencial</h2> 
+          </div> 
+          <div class="col-md-4 nav-categorias">
+            <nav>
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#">Abierta 5k - 10K<br> (18 - 39 años)<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">Master 5k - 10K<br>(40 - 49 años)<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+                <li><a href="#">Plus 5k - 10K<br>(50 años en adelante)<i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+            </ul>
+            </nav>
+            <div class="botones">
+            <a href="#"><i class="fa fa-file-text" aria-hidden="true"></i>Descargar el reglamento</a>
+            <a href="#"><i class="fa fa-file-text" aria-hidden="true"></i>Términos y condiciones</a>
+            <a href="#"><i class="fa fa-street-view" aria-hidden="true"></i>Ver resultados</a> 
+            </div>
+             
+          </div>
+          <div class="col-md-8 info-categorias">
+            <img src="img/abieta_18_39.webp" alt="Hombre y mujer felices trotando"> 
+            <h3>Abierta 5k - 10k (18 - 39 años)</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <br><br>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua:</p>
+            <a href="#" class="btn-principal" role="button">Inscríbete aquí</a>
+          </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .bg-detalles {
+        background-color: #008698;
+    }
+    
+    .bg-detalles2 {
+        background-color: #016774;
+        margin-top: 55px;
+    }
+    
+    .info-carrera {
+        padding: 100px 0 0 0;
+    }
+    .datos {
+        display: flex;
+        margin-top: 50px;
+        align-items: flex-end;
+    }
+    
+    .datos img {
+        box-shadow: 0 0 0 0;
+    }
+    
+    .kit-carrera {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    .info-kit {
+        text-align: left;
+    }
+    
+    .borde {
+        border-left: 1px solid #58D0D9;
+        border-right: 1px solid #58D0D9;
+    }
+   
+    
+</style>
+<section title="Detalles de la carrera">
+    <div class="container-fluid bg-detalles">
+       <div class="container info-carrera">
+           <div class="col-md-8 col-md-offset-2">
+            <h2>Detalles de la carrera</h2>   
+           </div>
+       </div>
+       <div class="container-fluid bg-detalles2">
+          <div class="container datos">
+          <div class="col-md-3"><img src="img/map.svg" alt="icono mapa"><p><b>Lugar</b><br>Parque Simón Bolívar</p></div>
+           <div class="col-md-3 borde"><img src="img/calendar.svg" alt="icono calendario"><p><b>Fecha</b><br>Parque Simón Bolívar</p></div>
+           <div class="col-md-6 kit-carrera"><div class="col-md-3"><img src="img/bag.svg" alt="icono mochila"><p><b>Kit de carrera</b></p></div><div class="col-md-8 info-kit"><p>Participación en la competencia, Kit de carrera (chip, número de competencia, guía técnica, mochila, camiseta, medalla conmemorativa) .</p></div></div>
+           </div>
+           
+       </div>
+        
+    </div>
 </section>
 
 </main>
