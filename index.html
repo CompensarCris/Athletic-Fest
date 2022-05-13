@@ -49,7 +49,7 @@
     .container h3 {
         padding-bottom: 30px;
         font-family: 'Sarabun', sans-serif;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: 700;
         color: white;
     }
@@ -371,6 +371,7 @@ display: none !important;
         padding: 30px;
         border-radius: 10px 10px 0 0;
         margin: 0;
+        font-size: 30px;
     }
     
     .nav-categorias ul{
@@ -447,6 +448,7 @@ display: none !important;
         padding-top: 30px;
         color: white;
         font-weight: 600;
+        font-size: 30px;
     }
     
     .info-categorias p {
@@ -525,8 +527,45 @@ display: none !important;
         border-left: 1px solid #58D0D9;
         border-right: 1px solid #58D0D9;
     }
-   
+    .recorrido p {
+        
+        font-size: 27px;
+        margin-top: 20px;
+        
+    }
     
+    /* PREMIACION */
+    
+    .p.datos {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .premiacion img {
+        width: 100%;
+        
+    }
+    
+    .premiacion {
+        padding: 50px 0;
+}
+    
+    
+    .icon img{
+        
+        box-shadow: 0 0 0 0;
+        width: auto;
+    }
+    
+    .p-datos p {
+        padding: 20px 0 ;
+    }
+    
+    .contenedor-premiacion {
+        
+        display: flex;
+    align-items: center;
+    }
 </style>
 <section title="Detalles de la carrera">
     <div class="container-fluid bg-detalles">
@@ -545,10 +584,35 @@ display: none !important;
        </div>
        
         <div class="container">
-            <div class="col-md-12">
-                <h3>Recorrido</h3>
+            <div class="col-md-12 recorrido">
+                <h3>Recorridos</h3>
+                <div class="col-md-6"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1dUzXVx9k8utTxYrmy5hHcTGXM-zkRNWK&amp;ehbc=2E312F" width="470" height="430" data-gtm-yt-inspected-8771379_136="true" data-gtm-yt-inspected-8771379_396="true" data-gtm-yt-inspected-8771379_321="true" data-gtm-yt-inspected-1_19="true"></iframe><p>Recorrido 5K</p></div>
+                <div class="col-md-6"><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1zQwo2fkG2iq2IPPN2vtEXmp8jYlgHXr1&ehbc=2E312F" width="470" height="430"></iframe><p>Recorrido 10K</p></div>
             </div>
-        </div> 
+        </div>
+        
+         <div class="container-fluid bg-detalles2">
+          <div class="container premiacion">
+          <h3>Premiación</h3>
+          <div class="col-md-12 contenedor-premiacion">
+            <div class="col-md-5"><img src="img/premiacion_carrera.webp" alt="Personas sonriendo y festejando por su premiación"></div>
+          <div class="col-md-6 col-md-offset-1 p-datos">
+          <div class="col-md-6 icon">
+              <img  src="img/copa.svg" alt="icono copa conmemorativa" >
+              <p>Trofeos para los tres primeros puestos por categoría.</p>
+          </div>
+          <div class="col-md-6 icon">
+              <img src="img/medalla.svg" alt="icono medalla"><p>Todos los participantes obtendrán medalla de participación.</p>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p></div> 
+              
+          </div>
+          
+          
+           </div>
+           
+       </div> 
+           
     </div>
 </section>
 

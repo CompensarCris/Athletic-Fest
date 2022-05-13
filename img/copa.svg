@@ -1,0 +1,32 @@
+<svg id="cup_icon-icons.com_55322" xmlns="http://www.w3.org/2000/svg" width="69.426" height="63.977" viewBox="0 0 69.426 63.977">
+  <g id="Handles" transform="translate(0 4.46)">
+    <g id="Grupo_152" data-name="Grupo 152">
+      <path id="Trazado_15854" data-name="Trazado 15854" d="M60.747,4c-7.593,0-8.678,6.691-8.678,8.921s0,4.46,2.17,4.46,2.17-2.23,2.17-4.46,1.085-4.46,4.339-4.46,4.339,2.23,4.339,4.46c0,11.151-13.017,17.842-19.526,17.842h-21.7c-6.509,0-19.526-6.691-19.526-17.842,0-2.23,1.085-4.46,4.339-4.46s4.339,2.23,4.339,4.46,0,4.46,2.17,4.46,2.17-2.23,2.17-4.46S16.272,4,8.678,4A8.684,8.684,0,0,0,0,12.921c0,13.381,15.187,22.3,23.865,22.3h21.7c8.678,0,23.865-8.921,23.865-22.3A8.684,8.684,0,0,0,60.747,4Z" transform="translate(0 -4)" fill="#92f5fc"/>
+    </g>
+  </g>
+  <g id="Cup" transform="translate(14.641)">
+    <g id="Grupo_153" data-name="Grupo 153">
+      <path id="Trazado_15855" data-name="Trazado 15855" d="M54.144,4.46c0-2.231,0-4.46-2.23-4.46H16.23C14,0,14,2.229,14,4.46c0,37.914,15.612,33.453,15.612,37.914v4.46c0,4.46-6.691,2.23-6.691,6.691h22.3c0-4.46-6.691-2.23-6.691-6.691v-4.46C38.532,37.914,54.144,42.374,54.144,4.46Z" transform="translate(-14)" fill="#92f5fc"/>
+    </g>
+  </g>
+  <g id="Stand" transform="translate(12.411 50.595)">
+    <g id="Grupo_154" data-name="Grupo 154">
+      <path id="Trazado_15856" data-name="Trazado 15856" d="M54.374,52H14.23A2.23,2.23,0,0,0,12,54.23v8.921a2.231,2.231,0,0,0,2.23,2.23H54.374a2.231,2.231,0,0,0,2.23-2.23V54.23A2.23,2.23,0,0,0,54.374,52Z" transform="translate(-12 -52)" fill="#666"/>
+    </g>
+  </g>
+  <g id="Plate" transform="translate(23.355 55.047)">
+    <g id="Grupo_155" data-name="Grupo 155" transform="translate(0 0)">
+      <rect id="Rectángulo_80" data-name="Rectángulo 80" width="22.346" height="4.601" fill="#e6e6e6"/>
+    </g>
+  </g>
+  <g id="Base_1_" transform="translate(16.871 36.758)">
+    <g id="Grupo_156" data-name="Grupo 156">
+      <path id="Trazado_15857" data-name="Trazado 15857" d="M44.993,49.151h-22.3S16,49.151,16,53.612H51.684C51.684,49.151,44.993,49.151,44.993,49.151ZM29.381,42.46H38.3a2.23,2.23,0,0,0,0-4.46H29.381a2.23,2.23,0,1,0,0,4.46Z" transform="translate(-16 -38)" fill="#92f5fc" fill-rule="evenodd"/>
+    </g>
+  </g>
+  <g id="_x31_" transform="translate(28.022 6.69)">
+    <g id="Grupo_157" data-name="Grupo 157">
+      <path id="Trazado_15858" data-name="Trazado 15858" d="M37.151,21.611h-2.23V6h-2.23a2.217,2.217,0,0,0-1.929,1.132l-4.126,4.127a2.141,2.141,0,0,0,3.028,3.028l.8-.8v8.124H28.23a2.23,2.23,0,0,0,0,4.46h8.921a2.23,2.23,0,0,0,0-4.46Z" transform="translate(-26 -5.999)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
