@@ -242,7 +242,7 @@ display: none !important;
         border-radius: 25px;
         text-decoration: none;
         transition-duration: 0.9s;
-        width: 350px;
+        width: 370px;
     margin: auto;
     }
     
@@ -498,7 +498,7 @@ display: none !important;
     
     .bg-detalles2 {
         background-color: #016774;
-        margin: 55px 0;
+        margin: 55px 0 100px 0;
     }
     
     .info-carrera {
@@ -557,14 +557,18 @@ display: none !important;
         width: auto;
     }
     
-    .p-datos p {
-        padding: 20px 0 ;
+    .t-premiacion {
+        padding: 30px 0 ;
     }
     
     .contenedor-premiacion {
         
         display: flex;
     align-items: center;
+    }
+    
+    .border-r {
+        border-right: 1px solid #58D0D9;
     }
 </style>
 <section title="Detalles de la carrera">
@@ -597,14 +601,14 @@ display: none !important;
           <div class="col-md-12 contenedor-premiacion">
             <div class="col-md-5"><img src="img/premiacion_carrera.webp" alt="Personas sonriendo y festejando por su premiación"></div>
           <div class="col-md-6 col-md-offset-1 p-datos">
-          <div class="col-md-6 icon">
+          <div class="col-md-6 icon border-r">
               <img  src="img/copa.svg" alt="icono copa conmemorativa" >
               <p>Trofeos para los tres primeros puestos por categoría.</p>
           </div>
           <div class="col-md-6 icon">
               <img src="img/medalla.svg" alt="icono medalla"><p>Todos los participantes obtendrán medalla de participación.</p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p></div> 
+          <div  class=" col-md-12 t-premiacion"><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. </p></div> </div>
               
           </div>
           
@@ -616,6 +620,66 @@ display: none !important;
     </div>
 </section>
 
+
+<style>
+
+    .prentrenamiento {
+        padding: 50px 0;
+    }    
+    
+    
+    .prentrenamiento h2 {
+        margin: 50px 0;
+    }  
+    
+    .prentrenamiento p {
+        padding: 0 20px;
+    }
+    
+    .intro {
+        padding-bottom: 70px;
+    }
+    
+    .prentrenamiento h3{
+        font-size: 25px;
+    }
+</style>
+
+<section title="Videos de pre-calentamiento">
+   
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 prentrenamiento">
+                <div class="col-md-8 col-md-offset-2 intro"><h2>Videos Pre-entrenamiento</h2>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p></div>
+                <div class="col-md-4 video"><iframe width="350" height="240" src="https://www.youtube.com/embed/G3IShqdadXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>Pre-calentamiento</h3></div>
+                <div class="col-md-4 video"><iframe width="350" height="240" src="https://www.youtube.com/embed/MPzfQMxrjdQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>Calentamiento</h3></div>
+                <div class="col-md-4 video"><iframe width="350" height="240" src="https://www.youtube.com/embed/G3IShqdadXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><h3>Estiramiento
+                </h3></div>
+                <div class="col-md-12">
+                    <a href="#" class="btn-principal">Ver más videos en nuestra plataforma</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+</section>
+
+<style>
+    .preguntas {
+        padding: 70px;
+    }
+</style>
+<section title="Preguntas frecuentes">
+    
+    <div class="container">
+        <div-row>
+            <div class="col-md-12 preguntas">
+                <div class="col-md-8 col-md-offset-2 intro"><h2>Preguntas frecuentes</h2></div>
+            </div>
+        </div-row>
+    </div>
+</section>
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
